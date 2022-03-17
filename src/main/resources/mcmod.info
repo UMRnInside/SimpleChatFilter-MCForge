@@ -1,0 +1,16 @@
+[
+{
+  "modid": "simplechatfiltermod",
+  "name": "Simple Chat Filter Mod",
+  "description": "Filter annoying chats. Read annoychats.txt .",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["UMRnInside"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
