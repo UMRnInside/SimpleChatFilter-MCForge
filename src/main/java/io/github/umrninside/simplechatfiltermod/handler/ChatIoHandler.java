@@ -30,10 +30,10 @@ public class ChatIoHandler {
     @SubscribeEvent
     public void onChat(ClientChatReceivedEvent event) {
         String messageText = event.getMessage().getUnformattedText();
-        logger.debug("Got ClientChatReceivedEvent");
+        // logger.debug("Got ClientChatReceivedEvent");
         if (builder.hasMatchedAny(messageText)) {
             event.setCanceled(true);
-            logger.info("Censored content: " + messageText);
+            logger.debug("Censored content: " + messageText);
         }
     }
     
@@ -54,7 +54,7 @@ public class ChatIoHandler {
     
     public void reloadKeywords() {
         ArrayList<String> strings = FileReader.readFile(keywordFilePath);
-        logger.warn("Read " + strings.size() + " strings.");
+        logger.debug("Read " + strings.size() + " strings.");
         builder.rebuildTrie(strings);
     }
 }
