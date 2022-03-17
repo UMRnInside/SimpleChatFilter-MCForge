@@ -2,7 +2,7 @@
 {
   "modid": "simplechatfiltermod",
   "name": "Simple Chat Filter Mod",
-  "description": "Filter annoying chats. Read annoychats.txt .",
+  "description": "Filter annoying chats, replace LivingCityTools Read ignoreList.citytools .",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
